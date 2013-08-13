@@ -5,7 +5,7 @@ development:
   database: MinexReports_development
   pool: 5
   username: dj
-  password: password
+  password: jordan
 
 test:
   adapter: postgresql
@@ -13,7 +13,7 @@ test:
   database: MinexReports_test
   pool: 5
   username: dj
-  password: password
+  password: jordan
 
 production:
   adapter: postgresql
@@ -21,4 +21,5 @@ production:
   database: MinexReports_production
   pool: 5
   username: umdjm
-  password: password
+  password: M1ch1gan
+
