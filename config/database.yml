@@ -20,5 +20,5 @@ production:
   encoding: unicode
   database: MinexReports_production
   pool: 5
-  username: dj
+  username: umdjm
   password: password
