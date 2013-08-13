@@ -1,0 +1,57 @@
+<%= form_for(@campaign_member) do |f| %>
+  <% if @campaign_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campaign_member.errors.count, "error") %> prohibited this campaign_member from being saved:</h2>
+
+      <ul>
+      <% @campaign_member.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :make %><br />
+    <%= f.text_field :make %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :vin %><br />
+    <%= f.text_field :vin %>
+  </div>
+  <div class="field">
+    <%= f.label :odometer %><br />
+    <%= f.number_field :odometer %>
+  </div>
+  <div class="field">
+    <%= f.label :radius %><br />
+    <%= f.text_field :radius %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

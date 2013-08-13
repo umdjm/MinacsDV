@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  campaign: 
+  name: 
+  address: 
+  year: 
+  model: 
+  make: 
+  vin: 
+  RO_Date: 
+  W_Amount: 
+  I_Amount: 
+  c_amount: 
+  ro_amount: 
+  part_amount: 
+  labor_amount: 
+  misc_amount: 9.99
+
+two:
+  campaign: 
+  name: 
+  address: 
+  year: 
+  model: 
+  make: 
+  vin: 
+  RO_Date: 
+  W_Amount: 
+  I_Amount: 
+  c_amount: 
+  ro_amount: 
+  part_amount: 
+  labor_amount: 
+  misc_amount: 9.99

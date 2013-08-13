@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @campaign_member.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @campaign_member.address %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @campaign_member.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @campaign_member.longitude %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @campaign_member.year %>
+</p>
+
+<p>
+  <b>Make:</b>
+  <%= @campaign_member.make %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @campaign_member.model %>
+</p>
+
+<p>
+  <b>Vin:</b>
+  <%= @campaign_member.vin %>
+</p>
+
+<p>
+  <b>Odometer:</b>
+  <%= @campaign_member.odometer %>
+</p>
+
+<p>
+  <b>Radius:</b>
+  <%= @campaign_member.radius %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_member_path(@campaign_member) %> |
+<%= link_to 'Back', campaign_members_path %>

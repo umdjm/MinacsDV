@@ -1,0 +1,51 @@
+<h1>Listing campign_results</h1>
+
+<table>
+  <tr>
+    <th>Campaign</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Year</th>
+    <th>Model</th>
+    <th>Make</th>
+    <th>Vin</th>
+    <th>Ro date</th>
+    <th>W amount</th>
+    <th>I amount</th>
+    <th>C amount</th>
+    <th>Ro amount</th>
+    <th>Part amount</th>
+    <th>Labor amount</th>
+    <th>Misc amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @campign_results.each do |campign_result| %>
+  <tr>
+    <td><%= campign_result.campaign %></td>
+    <td><%= campign_result.name %></td>
+    <td><%= campign_result.address %></td>
+    <td><%= campign_result.year %></td>
+    <td><%= campign_result.model %></td>
+    <td><%= campign_result.make %></td>
+    <td><%= campign_result.vin %></td>
+    <td><%= campign_result.RO_Date %></td>
+    <td><%= campign_result.W_Amount %></td>
+    <td><%= campign_result.I_Amount %></td>
+    <td><%= campign_result.c_amount %></td>
+    <td><%= campign_result.ro_amount %></td>
+    <td><%= campign_result.part_amount %></td>
+    <td><%= campign_result.labor_amount %></td>
+    <td><%= campign_result.misc_amount %></td>
+    <td><%= link_to 'Show', campign_result %></td>
+    <td><%= link_to 'Edit', edit_campign_result_path(campign_result) %></td>
+    <td><%= link_to 'Destroy', campign_result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Campign result', new_campign_result_path %>

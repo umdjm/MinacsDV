@@ -1,0 +1,2 @@
+module CampignResultsHelper
+end

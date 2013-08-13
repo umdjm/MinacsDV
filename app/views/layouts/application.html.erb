@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minacs Reports</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&.js" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Minacs Data Visualizations", root_path,:class => "brand" %>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+               <% if @current_user %>
+              Logged in as | <%= @current_user.email %>
+              | <%= link_to "Logout", logout_path %>
+              <% end %>
+            </p>
+            <ul class="nav">
+              <li class="active">
+                <%= link_to "Home", root_path%>
+              </li>
+
+              <li><a href="http://www.magnifyas.com">About Magnify</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%= yield %>
+
+</body>
+</html>
